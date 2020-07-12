@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>轮播插件开发</title>
+  <link type="text/css" rel="stylesheet" href="./swiper-plugin.css/swiper-plugin.css">
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide-one">
+        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide1</p>
+      </div>
+      <div class="swiper-slide-two">
+        <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide 2</p>
+      </div>
+    </div>
+    <!-- 前进后退按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide-one">
+        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide1</p>
+      </div>
+      <div class="swiper-slide-two">
+        <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide 2</p>
+      </div>
+      <div class="swiper-slide-three">
+        <p class="ani" swiper-animate-effect="shake" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">Slide 3
+        </p>
+      </div>
+    </div>
+    <!-- 前进后退按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide-one">
+        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide1</p>
+      </div>
+      <div class="swiper-slide-two">
+        <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+          Slide 2</p>
+      </div>
+      <div class="swiper-slide-three">
+        <p class="ani" swiper-animate-effect="shake" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">Slide 3
+        </p>
+      </div>
+      <div class="swiper-slide-four">
+        <p class="ani" swiper-animate-effect="shake" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">Slide 4
+        </p>
+      </div>
+    </div>
+    <!-- 前进后退按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script type="text/javascript" src="./swiper-plugin.js/swiper-plugin.js"></script>
+  <script type="text/javascript">
+    const mySwiper = new swiper('.swiper-container', {
+      loop: true,
+      swiperButton: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  </script>
+</body>
+
+</html>
